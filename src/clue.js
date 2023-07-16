@@ -138,22 +138,7 @@ console.log (thisGameRandomCard);
 
 
 // ITERATION 3
-let envelope = {};
-let message = "";
-let revealName = "";
-let revealWeapon = "";
-let revealRoom = "";
 
 function revealMystery(envelope) {
-   revealName = `${thisGameRandomCard.suspect.firstName}` + " " + `${thisGameRandomCard.suspect.lastName}`;
-   revealWeapon = `${thisGameRandomCard.weapon.name} `;
-   revealRoom = `${thisGameRandomCard.room.name}`;
-   
-    message = revealName + " killed Mr.Boddy using the " + revealWeapon + " in the room " + revealRoom;
-
-    return  message;
-   
-}
-
- revealMystery (envelope);
- console.log (message);
+    return  `${thisGameRandomCard.suspect.firstName} ${thisGameRandomCard.suspect.lastName} killed Mr. Boddy using the ${thisGameRandomCard.weapon.name} in the ${thisGameRandomCard.room.name}!`;
+   }
